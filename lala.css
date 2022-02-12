@@ -35,3 +35,21 @@ header > h1
 {
     grid-column: 5/1;
 }
+
+.moving_square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count:5;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; right:0px; top:0px;}
+    25%  {background-color:green; right:0px; top:300px;}
+    50%  {background-color:blue; right:300px; top:300px;}
+    75%  {background-color:yellow; right:300px; top:0px;}
+    100% {background-color:red; right:0px; top:0px;}
+  }
