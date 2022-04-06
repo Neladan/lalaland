@@ -1,0 +1,157 @@
+/*header {
+    background-color: aqua;
+}
+
+section {
+    background-color: lightgreen;
+}
+
+.one, .two {
+    background-color: yellow;
+}
+
+.three, .four {
+    background-color: purple;
+}
+
+.five,  .six {
+    background-color: pink;
+}
+
+footer {
+    background-color: red;
+}
+
+
+@media only screen and (max-width : 767px) {
+    main {
+        display: grid;
+    grid-template-rows: 5% 30% 30% 30% 5%;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+header { grid-area: header; }
+section { grid-area: section; }
+.one { grid-area: art1; }
+.two{ grid-area: art2; }
+.three { grid-area: art3; }
+.four{ grid-area: art4; }
+footer { grid-area: header; }
+
+
+main {
+  display: grid;
+  grid-template-areas:
+    'header header '
+    'section section section section'
+    'art1 art1 art2 art2'
+    'art3 art3 art4 art4'
+    'footer footer footer footer';
+  grid-gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+}*/
+
+header{
+    min-height: 100px;
+    background-color: lightblue;
+    margin-bottom: 1%;
+    width: 50%;
+}
+
+section{
+    min-height: 200px;
+    background-color: lightgreen;
+    margin-bottom: 1%;
+}
+
+.one {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+article{
+    width: 49%;  
+    min-height: 200px;
+    margin-bottom: 1%;
+}
+
+.one{
+    background-color: yellow;
+}
+
+.two{
+    background-color: violet;
+}
+
+.three{
+    background-color: blueviolet;
+}
+
+footer{
+    min-height: 100px;
+    background-color: tomato;
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+
+    header{
+        width: 100%;
+    }
+
+    article{
+        width: 100%;  
+        min-height: 200px;
+        margin-bottom: 1%;
+    }
+    
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+   
+    article{
+        width: 49%;  
+        min-height: 200px;
+        margin-bottom: 1%;
+    }
+
+header { grid-area: header; }
+section { grid-area: section; }
+.one { grid-area: art1; }
+.one{ grid-area: art2; }
+.two { grid-area: art3; }
+.two{ grid-area: art4; }
+footer { grid-area: footer; }
+
+
+main {
+  display: grid;
+  grid-template-areas:
+    'header header '
+    'section section section section'
+    'art1 art1 art2 art2'
+    'art3 art3 art4 art4'
+    'footer footer footer footer';
+  grid-gap: 10px;
+  background-color: white;
+  padding: 10px;
+    
+}
+
+}
+
+@media only screen and (min-width: 1024px) {
+   
+    article{
+        width: 32%;  
+        min-height: 200px;
+        margin-bottom: 1%;
+    }
+    
+}
