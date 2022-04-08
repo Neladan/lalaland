@@ -9,7 +9,7 @@ module.exports = {
         else 
             Gchar = 0;
         }
-        console.log(Gchar);
+        return(Gchar);
     }
     
 }
