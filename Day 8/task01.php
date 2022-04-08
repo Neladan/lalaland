@@ -8,3 +8,4 @@
             echo"Hello my name is $name, I'm $age years old. I'm not a student";
         }
     }
+?>
